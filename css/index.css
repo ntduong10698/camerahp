@@ -63,7 +63,7 @@ img {
     top: 0px;
     left: 0px;
     background: #eee8fc;
-    z-index: 1;
+    z-index: 99;
     overflow-y: auto;
     height: 100%;
 }
@@ -112,6 +112,10 @@ ul.list-menu-mobile > li .fa-caret-down{
     display: flex;
     margin-bottom: unset;
     border-left: solid 1px #487fe9;
+}
+
+.header a {
+    padding: 9px 0px;
 }
 
 .header .package {
