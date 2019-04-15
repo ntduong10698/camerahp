@@ -12,10 +12,10 @@ $(function() {
     })
 
     $(".menu-bar .category").click(function() {
-        $(".menu-mobile").removeClass("hidden");
+        $(".menu-mobile").addClass("view-menu");
     })
     $(".menu-mobile .close-menu-mobile").click(function() {
-        $(".menu-mobile").addClass("hidden");
+        $(".menu-mobile").removeClass("view-menu");
     })
     //end_responsive_mobile
 
@@ -32,12 +32,8 @@ $(function() {
         width = $(window).width();
         if (width < 767) {
             $(".menu-bar .category span").text("Menu"); //change text
-            $(".menu-bar .category i").removeClass("fa-caret-down"); //change icon
-            $(".menu-bar .category i").addClass("fa-bars");
         } else {
             $(".menu-bar .category span").text("Danh mục sản phẩm"); //change text
-            $(".menu-bar .category i").removeClass("fa-bars"); //change icon
-            $(".menu-bar .category i").addClass("fa-caret-down");
         }
     })
     //responsive footer

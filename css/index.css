@@ -40,8 +40,8 @@ a:hover {
     display: inline !important;
 }
 
-.hidden {
-    display: none;
+.view-menu {
+    left: 0px !important;
 }
 
 .package {
@@ -61,11 +61,12 @@ img {
 .menu-mobile{
     position: fixed;
     top: 0px;
-    left: 0px;
+    left: -250px;
     background: #eee8fc;
     z-index: 99;
     overflow-y: auto;
     height: 100%;
+    transition: 0.4s;
 }
 .menu-mobile .close-menu-mobile{
     float: right;
